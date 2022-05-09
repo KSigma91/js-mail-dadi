@@ -3,15 +3,13 @@ const btn = document.querySelector(".btn");
 
 btn.addEventListener ('click',
 
-    function() {
-        const myNut = document.querySelector(".btn");
+    function () {
+        const myNut = document.querySelector("#mio_id");
 
-        for (i = 1; i < 6; i++) {
-            player1 = Math.floor(Math.random() * 6);
-
-                         
-        }
+        let btn = Math.floor(Math.random() * 6) + 1;  
 
         console.log(myNut);
     }
 );
+
+let result = document.querySelector(".risultato > h2").innerHTML = "Il risultato è: ";
