@@ -6,10 +6,16 @@ btn.addEventListener ('click',
     function () {
         const myNut = document.querySelector("#mio_id");
 
-        let btn = Math.floor(Math.random() * 6) + 1;  
+        // il giocatore otterrà un numero random
+        let playerChoice = Math.floor(Math.random() * 6) + 1;  
 
-        console.log(myNut);
+        console.log("playerChoice",playerChoice);
+
+        // il computer otterrà un numero random
+        let machineChoice = Math.floor(Math.random() * 6) + 1;
+
+        console.log("machineChoice",machineChoice);
     }
 );
 
-let result = document.querySelector(".risultato > h2").innerHTML = "Il risultato è: ";
+const result = document.querySelector(".risultato > h2").innerHTML = "Il risultato è: ";
