@@ -4,10 +4,11 @@ const btn = document.querySelector(".btn");
 btn.addEventListener ('click',
 
     function () {
+
         const myNut = document.querySelector("#mio_id");
 
         // il giocatore otterrà un numero random
-        let playerChoice = Math.floor(Math.random() * 6) + 1;  
+        let playerChoice = Math.floor(Math.random() * 6) + 1; 
 
         console.log("playerChoice",playerChoice);
 
@@ -15,6 +16,15 @@ btn.addEventListener ('click',
         let machineChoice = Math.floor(Math.random() * 6) + 1;
 
         console.log("machineChoice",machineChoice);
+
+        // qui vengono confrontati i risultati
+        if (playerChoice > machineChoice) {
+            risultato = "Ha vinto l'utente";
+        } else {
+            machineChoice > playerChoice;
+            risultato = "Ha vinto la macchina";
+        }
+
     }
 );
 

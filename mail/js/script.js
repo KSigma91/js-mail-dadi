@@ -3,6 +3,8 @@ let myUser = ["Pinco", "Pallo", "Sempronio", "Antani"];
 
 const btn = document.querySelector(".btn");
 
+const myOutput = document.querySelector("risultato");
+
 btn.addEventListener ('click',
 
     function() {
@@ -14,21 +16,9 @@ btn.addEventListener ('click',
         for (i = 0; i < myUser.length; i++) {
 
             let userVer = myUser[i];
-
+            
             console.log(userVer);
      
        }
     }
 );
-
-// faccio un debug
-// const myMail = prompt ("Inserisci la tua Mail");
-
-
-
-
-// if () {
-//     alert("La tua mail è valida");
-// } else {
-    
-// }
